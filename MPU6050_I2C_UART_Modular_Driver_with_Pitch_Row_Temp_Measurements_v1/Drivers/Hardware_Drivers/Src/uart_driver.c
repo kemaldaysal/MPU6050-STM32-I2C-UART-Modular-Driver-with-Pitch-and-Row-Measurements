@@ -13,7 +13,6 @@ volatile UART_Buffer_t UART_BufferRX;
 volatile UART_Buffer_t UART_BufferTX;
 
 static void Init_GPIO_for_UART(void);
-static uint32_t UART_is_buffer_empty(volatile UART_Buffer_t *buffer);
 
 HAL_StatusTypeDef UART_init(uint32_t baudrate) {
 
