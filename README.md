@@ -1,4 +1,4 @@
-**General Information**
+**General Information and References**
 * In this project, STM32F070RB is used. When implementing this code to other projects with different MCUs, the pin configurations (especially in uart_driver.c and uart_driver.h) will need to be changed.
 * The communication_layer and MPU_6050 header files and codes are generated with the reference of MPU6050's datasheet and register map documents, which can be reachable in TDK-Invensense's webpage.   
 * To improve the complimentary filter and sensor's refined outputs and improve the calculation methods, Joop Brokking's MPU6050 sensor's math guides and Euler Angles video references can be used.  
