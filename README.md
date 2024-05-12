@@ -1,7 +1,7 @@
 **General Information and References**
 * In this project, STM32F070RB is used. When implementing this code to other projects with different MCUs, the pin configurations (especially in uart_driver.c and uart_driver.h) will need to be changed.
 * The communication_layer and MPU_6050 header files and codes are generated with the reference of MPU6050's datasheet and register map documents, which can be reachable in TDK-Invensense's webpage.   
-* To improve the complimentary filter and sensor's refined outputs and improve the calculation methods, Joop Brokking's MPU6050 sensor's math guides and Euler Angles video references can be used.  
+* To improve the complimentary filter, calculation methods and hence the sensor's outputs, Joop Brokking's MPU6050 sensor's math guides and Euler Angles video references can be used.  
 
 **Things to do before trying the project codes**
 1) I2C (communication layer), UART and MPU6050's drivers header files and source codes are located inside of /Drivers/Hardware_Drivers/Inc and /Src files. Because STM32CubeIDE doesn't have default paths to these folders, user need to add these folders to to project's path preferences, in order to resolve the "header files and source codes can't be found" error. To do so, user should right-click to the project, then Properties -> C/C++ Build -> Settings -> MCU GCC Compiler -> Include Paths, then add the /Hardware_Drivers/Inc folder to the path.
